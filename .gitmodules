@@ -1,0 +1,4 @@
+[submodule "Source/OS"]
+	path = Source/OS
+	url = https://github.com/EmbeddedReality/OS.git
+	branch = master

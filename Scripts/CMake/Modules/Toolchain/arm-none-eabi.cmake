@@ -1,0 +1,15 @@
+set( CMAKE_SYSTEM_NAME Generic )
+
+set( TARGET_TOOLS_PATH "/home/martin/local/gcc-arm-none-eabi-7-2017-q4-major/bin/" )
+
+set( COMPILER_PREFIX arm-none-eabi )
+
+# Specify the C/C++ (cross)compilers
+set( CMAKE_C_COMPILER ${TARGET_TOOLS_PATH}${COMPILER_PREFIX}-gcc )
+set( CMAKE_CXX_COMPILER ${TARGET_TOOLS_PATH}${COMPILER_PREFIX}-g++ )
+
+# Target environment
+set( CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER )
+set( CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY )
+set( CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY )
+set( CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY )
